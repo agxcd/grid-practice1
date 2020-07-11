@@ -1,0 +1,23 @@
+
+.basic-grid {
+    display: grid;
+    gap: 1rem;
+
+   /* always has 1 rem gap between the grids */
+   gap:1rem;
+
+   /* 1fr = 100% 1fr 1fr =50% 50% keep dividing*/
+   /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+  
+    /* 2 cleaner code */
+    /* grid-template-columns: repeat(12, 1fr); */
+  
+    /* 3  better sizing, but overflows */
+    /* grid-template-columns: repeat(12, minmax(240px, 1fr)); */
+  
+    /* 4 final auto fill the page*/
+    /* grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); */
+   
+    /* 5 auto fit the page implicit grid-let the algorithm figure out cols/rows*/
+    /* grid-template-columns: repeat(auto-fit, minmax(2400px, 1fr)); */
+ }
